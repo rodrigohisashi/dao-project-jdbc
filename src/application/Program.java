@@ -2,6 +2,7 @@ package application;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 import model.dao.DaoFactory;
@@ -27,6 +28,12 @@ public class Program {
 		for (Seller obj : list) {
 			System.out.println(obj);
 		}
+		
+		System.out.println("========= TESTE 4 ========");
+		
+		Seller seller = new Seller(null, "Bob", "greg@gmail.com", new Date(), 4000.0, department);
+		sellerDao.insert(seller);
+		System.out.println(" Inserted ID: " + seller.getId());
 		
 	}
 }
