@@ -32,6 +32,13 @@ public class Program2 {
 		
 		dep.insert(dp2);
 		
+		System.out.println("==== TESTE 4: Update ==== ");
+		
+		dp2 = dep.findById(2);
+		
+		dp2.setName("Técnico");
+		dep.update(dp2);
+		
 	}
 
 }
