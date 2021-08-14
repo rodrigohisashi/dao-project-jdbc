@@ -25,6 +25,13 @@ public class Program2 {
 		for (Department deps : list) {
 			System.out.println(deps);
 		}
+		
+		System.out.println("==== TESTE 3: Insert ==== ");
+		
+		Department dp2 = new Department(null, "Fish");
+		
+		dep.insert(dp2);
+		
 	}
 
 }
