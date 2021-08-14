@@ -39,6 +39,10 @@ public class Program2 {
 		dp2.setName("Técnico");
 		dep.update(dp2);
 		
+
+		System.out.println("==== TESTE 5: Delete ==== ");
+		
+		dep.deleteById(6);
 	}
 
 }
